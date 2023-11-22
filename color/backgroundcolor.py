@@ -4,15 +4,7 @@ import turtle
 turtle.bgcolor("yellow")
 
 turtle.begin_fill()
-
-turtle.forward(100)
-
-turtle.left(120)
-turtle.forward(100)
-
-turtle.left(120)
-turtle.forward(100)
-
+turtle.circle(50)
 turtle.end_fill()
 
 turtle.done()
