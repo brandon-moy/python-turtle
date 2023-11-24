@@ -20,7 +20,18 @@ def draw_balloon ():
     turtle.color("red")
     turtle.dot(diameter)
     
+def inflate_balloon ():
+    global diameter
+    diameter += 10
+    draw_balloon()
+    
+    if diameter >= pop_diameter:
+        turtle.clear()
+        diameter = 40
+        turtle.write("POP!")
     
 draw_balloon()
+turtle.onkey(inflate_balloon, "Up")
+turtle.listen()
 
 turtle.done()
