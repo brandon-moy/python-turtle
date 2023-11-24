@@ -11,3 +11,16 @@
 #   no -> increase balloon size and redraw balloon
 # end
 
+import turtle
+
+diameter = 40
+pop_diameter = 100
+
+def draw_balloon ():
+    turtle.color("red")
+    turtle.dot(diameter)
+    
+    
+draw_balloon()
+
+turtle.done()
