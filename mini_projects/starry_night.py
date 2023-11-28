@@ -24,8 +24,8 @@ def draw_star(xpos, ypos):
   dot(size, "white")
   
 for x in range(100):
-  xpos = randrange((-width / 2), (width / 2))
-  ypos = randrange((-height / 2), ( height / 2))
+  xpos = randrange(int(-width / 2), int(width / 2))
+  ypos = randrange(int(-height / 2), int( height / 2))
   draw_star(xpos, ypos)
 
 done()
