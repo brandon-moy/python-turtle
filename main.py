@@ -1,11 +1,8 @@
-import turtle
+from random import *
+from turtle import *
 
-turtle.circle(50)
+forward(randrange(20, 100))
+right(randrange(0, 360))
+forward(randrange(20, 100))
 
-turtle.penup()
-turtle.forward(120)
-turtle.pendown()
-
-turtle.circle(50)
-
-turtle.done()
+done()
