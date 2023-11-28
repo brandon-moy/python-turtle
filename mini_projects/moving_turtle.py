@@ -38,18 +38,33 @@ color("green")
 def move_up ():
   setheading(90)
   forward(move_distance)
-  
+  check_goal()
+
 def move_down ():
   setheading(270)
   forward(move_distance)
+  check_goal()
   
 def move_right ():
   setheading(0)
   forward(move_distance)
+  check_goal()
   
 def move_left ():
   setheading(180)
   forward(move_distance)
+  check_goal()
+  
+def check_goal ():
+  if xcor() > 300:
+    hideturtle()
+    color("white")
+    write("YOU WIN!")
+    
+    onkeypress(None, "Up")
+    onkeypress(None, "Down")
+    onkeypress(None, "Left")
+    onkeypress(None, "Right")
   
 onkeypress(move_up, "Up")
 onkeypress(move_down, "Down")
