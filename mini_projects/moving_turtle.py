@@ -30,4 +30,32 @@ goto(300, -height)
 goto(300, height)
 end_fill()
 
+penup()
+goto(-300, 0)
+shape("turtle")
+color("green")
+
+def move_up ():
+  setheading(90)
+  forward(move_distance)
+  
+def move_down ():
+  setheading(270)
+  forward(move_distance)
+  
+def move_right ():
+  setheading(0)
+  forward(move_distance)
+  
+def move_left ():
+  setheading(180)
+  forward(move_distance)
+  
+onkeypress(move_up, "Up")
+onkeypress(move_down, "Down")
+onkeypress(move_right, "Right")
+onkeypress(move_left, "Left")
+
+listen()
+
 done()
